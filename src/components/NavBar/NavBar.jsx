@@ -23,7 +23,7 @@ const NavBar = ({setShowLogin}) => {
             <a href='#footer' onClick={()=>{setMenu("contact-us")}} className={menu==="contact-us"?'active':''}>Contact Us</a>
         </ul>
         <div className="navbar-right">
-            <img src={assets.search_icon} alt="search-icon" />
+            {/* <img src={assets.search_icon} alt="search-icon" /> */}
             <div className="navbar-cart">
                 <Link to='/cart'> <img src={assets.basket_icon} alt="cart" /></Link>
                 <div className={getTotalCartAmount()===0?"":"dot"}></div>
